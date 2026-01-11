@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="./vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Tempo Fitness - Premium Gym in Baku. Fit for Life.">
+  <title>Tempo Fitness | Baku</title>
+  <link rel="stylesheet" href="./style.css">
+  <!-- Phosphor Icons -->
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+
+<body>
+
+
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#" class="logo">
+        <img src="./assets/logo.jpg" alt="Tempo Fitness Logo" class="logo-img">
+        <span>Tempo Fitness</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#about" data-i18n="nav_about">About</a></li>
+        <li><a href="#coaches" data-i18n="nav_coaches">Coaches</a></li>
+        <li><a href="#restaurant" data-i18n="nav_restaurant">Restaurant</a></li>
+        <li><a href="#pricing" data-i18n="nav_pricing">Pricing</a></li>
+        <li><a href="#contact" data-i18n="nav_contact">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button id="lang-toggle" class="lang-btn">AZ</button>
+        <a href="#pricing" class="btn btn-primary nav-cta" data-i18n="nav_join">Join Now</a>
+      </div>
+      <div class="mobile-menu-btn">
+        <i class="ph ph-list"></i>
+      </div>
+    </div>
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+      <div class="mobile-menu-close">
+        <i class="ph ph-x"></i>
+      </div>
+      <ul class="mobile-nav-links">
+        <li><a href="#about" data-i18n="nav_about">About</a></li>
+        <li><a href="#coaches" data-i18n="nav_coaches">Coaches</a></li>
+        <li><a href="#restaurant" data-i18n="nav_restaurant">Restaurant</a></li>
+        <li><a href="#pricing" data-i18n="nav_pricing">Pricing</a></li>
+        <li><a href="#contact" data-i18n="nav_contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-bg" style="background-image: url('./assets/photo1.jpg');"></div>
+    <div class="container hero-content">
+      <h2 class="hero-slogan" data-i18n="hero_slogan">Fit for Life</h2>
+      <h1 class="hero-title">Tempo <span class="text-primary">Fitness</span></h1>
+      <p class="hero-subtitle" data-i18n="hero_subtitle">Premium equipment, expert coaching, and an atmosphere that
+        drives results.</p>
+      <div class="hero-ctas">
+        <a href="#pricing" class="btn btn-primary" data-i18n="btn_pricing">View Pricing</a>
+        <a href="tel:0508222272" class="btn btn-outline" data-i18n="btn_call">Call Us</a>
+      </div>
+      <div class="hero-info-chips">
+        <div class="chip">
+          <i class="ph ph-clock"></i>
+          <span data-i18n="chip_hours">Mon-Sat | 06:30-23:00</span>
+        </div>
+        <div class="chip">
+          <i class="ph ph-map-pin"></i>
+          <span data-i18n="chip_address">Azadliq Avenue 145</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section id="about" class="about-section">
+    <div class="container">
+      <div class="section-title">
+        <h2 data-i18n="about_title">Why Choose Us</h2>
+        <span></span>
+      </div>
+      <div class="about-grid">
+        <div class="about-text">
+          <h3 data-i18n="about_subtitle">More Than Just A Gym</h3>
+          <p data-i18n="about_desc1">At Tempo Fitness, we provide a holistic approach to health and wellness. Located in
+            the heart of Baku at Azadliq Avenue 145, our facility is designed for everyone—from beginners to pro
+            athletes.</p>
+          <p><strong data-i18n="about_desc2">We are a public gym offering top-tier equipment and a motivating
+              environment.</strong></p>
+
+          <div class="feature-list">
+            <div class="feature-item">
+              <i class="ph ph-barbell"></i>
+              <div>
+                <h4 data-i18n="feat_gym_title">Modern Facility</h4>
+                <p data-i18n="feat_gym_desc">State-of-the-art equipment for all your training needs.</p>
+              </div>
+            </div>
+            <div class="feature-item">
+              <i class="ph ph-users"></i>
+              <div>
+                <h4 data-i18n="feat_train_title">Expert Training</h4>
+                <p data-i18n="feat_train_desc">Certified personal trainers to guide your journey.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="about-image-wrapper">
+          <div class="about-img-frame">
+            <img src="./assets/photo1.jpg" alt="Gym Interior" class="about-img">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Coaches Section -->
+  <section id="coaches" class="coaches-section">
+    <div class="container">
+      <div class="section-title">
+        <h2 data-i18n="coaches_title">Our Coaches</h2>
+        <span></span>
+      </div>
+      <div class="coaches-grid" id="coaches-grid">
+        <!-- Coach 1 -->
+        <div class="coach-card">
+          <div class="coach-img-wrapper">
+            <img src="./assets/coach1-elchin-jafarli.jpg" alt="Elchin Jafarli" loading="lazy">
+            <div class="coach-overlay">
+              <a href="https://instagram.com/gafarli78" target="_blank" class="social-icon"><i
+                  class="ph ph-instagram-logo"></i></a>
+            </div>
+          </div>
+          <div class="coach-info">
+            <h4 data-coach="0">Elchin Jafarli</h4>
+            <p class="coach-role" data-role="0">Head Coach</p>
+          </div>
+        </div>
+        <!-- Coach 2 -->
+        <div class="coach-card">
+          <div class="coach-img-wrapper">
+            <img src="./assets/coach2-ayten-yusifli.jpg" alt="Ayten Yusifli" loading="lazy">
+            <div class="coach-overlay">
+              <a href="https://instagram.com/fitnessayten" target="_blank" class="social-icon"><i
+                  class="ph ph-instagram-logo"></i></a>
+            </div>
+          </div>
+          <div class="coach-info">
+            <h4 data-coach="1">Ayten Yusifli</h4>
+            <p class="coach-role" data-role="1">Personal Trainer</p>
+          </div>
+        </div>
+        <!-- Coach 3 -->
+        <div class="coach-card">
+          <div class="coach-img-wrapper">
+            <img src="./assets/coach3-sahib-valiyev.jpg" alt="Sahib Valiyev" loading="lazy">
+            <div class="coach-overlay">
+              <a href="https://instagram.com/sahib_veliyev_006" target="_blank" class="social-icon"><i
+                  class="ph ph-instagram-logo"></i></a>
+            </div>
+          </div>
+          <div class="coach-info">
+            <h4 data-coach="2">Sahib Valiyev</h4>
+            <p class="coach-role" data-role="2">Strength Coach</p>
+          </div>
+        </div>
+        <!-- Coach 4 -->
+        <div class="coach-card">
+          <div class="coach-img-wrapper">
+            <img src="./assets/coach4-vural-sengul.jpg" alt="Vural Sengul" loading="lazy">
+            <div class="coach-overlay">
+              <a href="https://instagram.com/vural_fit" target="_blank" class="social-icon"><i
+                  class="ph ph-instagram-logo"></i></a>
+            </div>
+          </div>
+          <div class="coach-info">
+            <h4 data-coach="3">Vural Sengul</h4>
+            <p class="coach-role" data-role="3">Fitness Trainer</p>
+          </div>
+        </div>
+        <!-- Coach 5 -->
+        <div class="coach-card">
+          <div class="coach-img-wrapper">
+            <img src="./assets/coach5-said-monsumov.jpg" alt="Said Monsumov" loading="lazy">
+            <div class="coach-overlay">
+              <a href="https://instagram.com/saidmonsumov" target="_blank" class="social-icon"><i
+                  class="ph ph-instagram-logo"></i></a>
+            </div>
+          </div>
+          <div class="coach-info">
+            <h4 data-coach="4">Said Monsumov</h4>
+            <p class="coach-role" data-role="4">Bodybuilding Coach</p>
+          </div>
+        </div>
+        <!-- Coach 6 -->
+        <div class="coach-card">
+          <div class="coach-img-wrapper">
+            <img src="./assets/coach6-azad-huseynzade.jpg" alt="Azad Huseynzade" loading="lazy">
+            <div class="coach-overlay">
+              <a href="https://instagram.com/azad.huseynzade" target="_blank" class="social-icon"><i
+                  class="ph ph-instagram-logo"></i></a>
+            </div>
+          </div>
+          <div class="coach-info">
+            <h4 data-coach="5">Azad Huseynzade</h4>
+            <p class="coach-role" data-role="5">Senior Trainer</p>
+          </div>
+        </div>
+        <!-- Coach 7 -->
+        <div class="coach-card">
+          <div class="coach-img-wrapper">
+            <img src="./assets/coach7-eltun-quliyev.jpg" alt="Eltun Quliyev" loading="lazy">
+            <div class="coach-overlay">
+              <a href="https://instagram.com/eltunquliyev" target="_blank" class="social-icon"><i
+                  class="ph ph-instagram-logo"></i></a>
+            </div>
+          </div>
+          <div class="coach-info">
+            <h4 data-coach="6">Eltun Quliyev</h4>
+            <p class="coach-role" data-role="6">Personal Trainer</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Restaurant Section (NEW) -->
+  <section id="restaurant" class="restaurant-section">
+    <div class="container">
+      <div class="restaurant-layout">
+        <div class="rest-info">
+          <h2 data-i18n="rest_title_main">Refuel & Recover</h2>
+          <p data-i18n="rest_desc_long">Your workout doesn't end when you leave the floor. Nutrition is key. At Tempo
+            Fitness, our in-house restaurant serves fresh, healthy, and protein-packed meals designed to fuel your
+            recovery.</p>
+          <div class="rest-features">
+            <span><i class="ph ph-plant"></i> Fresh Ingredients</span>
+            <span><i class="ph ph-lightning"></i> High Protein</span>
+          </div>
+          <div class="rest-integration">
+            <p data-i18n="rest_delivery">Delivery available via Wolt.</p>
+            <a href="https://wolt.com/az/aze/baku/restaurant/tempo-fitness?utm_source=googlemapreserved&utm_campaign=tempo-fitness&utm_content=68fb414651c58690bba204c6"
+              target="_blank" class="wolt-btn-large">
+              <img src="./restaurant_assets/Wolt-Logo.png" alt="Wolt" class="wolt-icon">
+              <span data-i18n="btn_order_wolt">Order on Wolt</span>
+            </a>
+          </div>
+        </div>
+        <div class="rest-gallery">
+          <div class="rest-grid">
+            <div class="rest-item"><img src="./restaurant_assets/food1.png" alt="Food"></div>
+            <div class="rest-item"><img src="./restaurant_assets/food2.png" alt="Food"></div>
+            <div class="rest-item"><img src="./restaurant_assets/food3.png" alt="Food"></div>
+            <div class="rest-item"><img src="./restaurant_assets/food4.png" alt="Food"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Section -->
+  <section id="pricing" class="pricing-section">
+    <div class="container">
+      <div class="section-title">
+        <h2 data-i18n="pricing_title">Membership Plans</h2>
+        <span></span>
+      </div>
+
+      <div class="pricing-tabs">
+        <button class="pricing-tab active" id="tab-men" data-i18n="men">Men</button>
+        <button class="pricing-tab" id="tab-women" data-i18n="women">Women</button>
+      </div>
+
+      <div class="pricing-grid modal-men active" id="pricing-men">
+        <!-- 1 Day -->
+        <div class="pricing-card">
+          <h3 data-plan="0">1 Day Pass</h3>
+          <div class="price"><span class="currency">₼</span><span class="amount">10</span></div>
+          <p class="savings-placeholder">&nbsp;</p>
+          <ul class="plan-features">
+            <li><i class="ph ph-check-circle"></i> <span data-i18n="feat_1_entry">1 Entry</span></li>
+          </ul>
+          <a href="#contact" class="btn btn-outline full-width" data-i18n="get_membership">Get Membership</a>
+        </div>
+        <!-- Monthly -->
+        <div class="pricing-card">
+          <h3 data-plan="1">Monthly (12 entries)</h3>
+          <div class="price"><span class="currency">₼</span><span class="amount">90</span></div>
+          <p class="savings-placeholder">&nbsp;</p>
+          <ul class="plan-features">
+            <li><i class="ph ph-check-circle"></i> <span data-i18n="feat_12_entries">12 Entries</span></li>
+          </ul>
+          <a href="#contact" class="btn btn-outline full-width" data-i18n="get_membership">Get Membership</a>
+        </div>
+        <!-- Monthly Unl -->
+        <div class="pricing-card">
+          <h3 data-plan="2">Monthly Unlimited</h3>
+          <div class="price"><span class="currency">₼</span><span class="amount">100</span></div>
+          <p class="savings-placeholder">&nbsp;</p>
+          <ul class="plan-features">
+            <li><i class="ph ph-check-circle"></i> <span data-i18n="feat_unlimited">Unlimited Entries</span></li>
+          </ul>
+          <a href="#contact" class="btn btn-outline full-width" data-i18n="get_membership">Get Membership</a>
+        </div>
+        <!-- 3 Months -->
+        <div class="pricing-card">
+          <h3 data-plan="3">3 Months Unlimited</h3>
+          <div class="price"><span class="currency">₼</span><span class="amount">250</span></div>
+          <p class="savings-text" data-save="3_m">Save 50₼</p>
+          <ul class="plan-features">
+            <li><i class="ph ph-check-circle"></i> <span data-i18n="feat_unlimited">Unlimited Entries</span></li>
+          </ul>
+          <a href="#contact" class="btn btn-outline full-width" data-i18n="get_membership">Get Membership</a>
+        </div>
+        <!-- 6 Months -->
+        <div class="pricing-card">
+          <h3 data-plan="4">6 Months Unlimited</h3>
+          <div class="price"><span class="currency">₼</span><span class="amount">450</span></div>
+          <p class="savings-text" data-save="4_m">Save 150₼</p>
+          <ul class="plan-features">
+            <li><i class="ph ph-check-circle"></i> <span data-i18n="feat_unlimited">Unlimited Entries</span></li>
+          </ul>
+          <a href="#contact" class="btn btn-outline full-width" data-i18n="get_membership">Get Membership</a>
+        </div>
+        <!-- 1 Year -->
+        <div class="pricing-card">
+          <h3 data-plan="5">1 Year Unlimited</h3>
+          <div class="price"><span class="currency">₼</span><span class="amount">850</span></div>
+          <p class="savings-text" data-save="5_m">Save 350₼</p>
+          <ul class="plan-features">
+            <li><i class="ph ph-check-circle"></i> <span data-i18n="feat_unlimited">Unlimited Entries</span></li>
+          </ul>
+          <a href="#contact" class="btn btn-outline full-width" data-i18n="get_membership">Get Membership</a>
+        </div>
+      </div>
+
+      <!-- WOMEN PRICING GRID (Hidden by default via CSS) -->
+      <div class="pricing-grid modal-women" id="pricing-women" style="display:none;">
+        <!-- 1 Day -->
+        <div class="pricing-card">
+          <h3 data-plan="0">1 Day Pass</h3>
+          <div class="price"><span class="currency">₼</span><span class="amount">10</span></div>
+          <p class="savings-placeholder">&nbsp;</p>
+          <ul class="plan-features">
+            <li><i class="ph ph-check-circle"></i> <span data-i18n="feat_1_entry">1 Entry</span></li>
+          </ul>
+          <a href="#contact" class="btn btn-outline full-width" data-i18n="get_membership">Get Membership</a>
+        </div>
+        <!-- Monthly -->
+        <div class="pricing-card">
+          <h3 data-plan="1">Monthly (12 entries)</h3>
+          <div class="price"><span class="currency">₼</span><span class="amount">70</span></div>
+          <p class="savings-placeholder">&nbsp;</p>
+          <ul class="plan-features">
+            <li><i class="ph ph-check-circle"></i> <span data-i18n="feat_12_entries">12 Entries</span></li>
+          </ul>
+          <a href="#contact" class="btn btn-outline full-width" data-i18n="get_membership">Get Membership</a>
+        </div>
+        <!-- Monthly Unl -->
+        <div class="pricing-card">
+          <h3 data-plan="2">Monthly Unlimited</h3>
+          <div class="price"><span class="currency">₼</span><span class="amount">80</span></div>
+          <p class="savings-placeholder">&nbsp;</p>
+          <ul class="plan-features">
+            <li><i class="ph ph-check-circle"></i> <span data-i18n="feat_unlimited">Unlimited Entries</span></li>
+          </ul>
+          <a href="#contact" class="btn btn-outline full-width" data-i18n="get_membership">Get Membership</a>
+        </div>
+        <!-- 3 Months -->
+        <div class="pricing-card">
+          <h3 data-plan="3">3 Months Unlimited</h3>
+          <div class="price"><span class="currency">₼</span><span class="amount">200</span></div>
+          <p class="savings-text" data-save="3_w">Save 40₼</p>
+          <ul class="plan-features">
+            <li><i class="ph ph-check-circle"></i> <span data-i18n="feat_unlimited">Unlimited Entries</span></li>
+          </ul>
+          <a href="#contact" class="btn btn-outline full-width" data-i18n="get_membership">Get Membership</a>
+        </div>
+        <!-- 6 Months -->
+        <div class="pricing-card">
+          <h3 data-plan="4">6 Months Unlimited</h3>
+          <div class="price"><span class="currency">₼</span><span class="amount">360</span></div>
+          <p class="savings-text" data-save="4_w">Save 120₼</p>
+          <ul class="plan-features">
+            <li><i class="ph ph-check-circle"></i> <span data-i18n="feat_unlimited">Unlimited Entries</span></li>
+          </ul>
+          <a href="#contact" class="btn btn-outline full-width" data-i18n="get_membership">Get Membership</a>
+        </div>
+        <!-- 1 Year -->
+        <div class="pricing-card">
+          <h3 data-plan="5">1 Year Unlimited</h3>
+          <div class="price"><span class="currency">₼</span><span class="amount">600</span></div>
+          <p class="savings-text" data-save="5_w">Save 360₼</p>
+          <ul class="plan-features">
+            <li><i class="ph ph-check-circle"></i> <span data-i18n="feat_unlimited">Unlimited Entries</span></li>
+          </ul>
+          <a href="#contact" class="btn btn-outline full-width" data-i18n="get_membership">Get Membership</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact-section">
+    <div class="container">
+      <div class="contact-wrapper">
+        <div class="contact-info">
+          <h3 data-i18n="contact_title">Get In Touch</h3>
+          <p data-i18n="contact_desc">Ready to start? Visit us or contact us today.</p>
+
+          <div class="contact-item">
+            <i class="ph ph-map-pin"></i>
+            <div>
+              <h5 data-i18n="contact_addr_title">Address</h5>
+              <p data-i18n="contact_addr_val">Azadlıq prospekti 145, Baku, Azerbaijan</p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <i class="ph ph-phone"></i>
+            <div>
+              <h5 data-i18n="contact_phone_title">Phone</h5>
+              <p><a href="tel:0508222272">(050) 822 22 72</a></p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <i class="ph ph-clock"></i>
+            <div>
+              <h5 data-i18n="contact_hours_title">Working Hours</h5>
+              <p data-i18n="contact_hours_val">Mon - Sat | 06:30 - 23:00</p>
+            </div>
+          </div>
+
+          <div class="social-links">
+            <a href="https://www.instagram.com/tempofitness_az/" target="_blank"><i
+                class="ph ph-instagram-logo"></i></a>
+            <a href="https://www.facebook.com/100086712857289/about/" target="_blank"><i
+                class="ph ph-facebook-logo"></i></a>
+            <a href="https://wa.me/994508222272" target="_blank"><i class="ph ph-whatsapp-logo"></i></a>
+          </div>
+        </div>
+        <div class="map-container">
+          <!-- Google Maps Embed -->
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3038.747125555555!2d49.8373774!3d40.401963!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40307d0002cee8b3%3A0xe69e7a8ba07ae0f0!2sTempo%20Fitness!5e0!3m2!1sen!2saz!4v1700000000000!5m2!1sen!2saz"
+            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container footer-content">
+      <div class="footer-logo">
+        <h3>Tempo Fitness</h3>
+        <p>Fit for Life.</p>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Tempo Fitness. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./main.js" defer></script>
+</body>
+
+</html>
